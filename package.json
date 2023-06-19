@@ -8,7 +8,7 @@
     "test": "yarn build && jest",
     "lint": "tslint -p . -t verbose",
     "shipit": "yarn build && yarn scriptbundle && yarn minbundle && np",
-    "build": "tsc --skipLibCheck",
+    "build": "node api.js && tsc --skipLibCheck",
     "toc": "doctoc .",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
